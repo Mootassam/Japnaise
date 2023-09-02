@@ -3,29 +3,42 @@ import "./Brown.css";
 function Brown(props) {
   return (
     <div className="app__brown">
-      <div className="brown__header"></div>
+      <div className="brown__header">
+        <span>17:19</span>
+      </div>
 
       <div className="brown__content">
         <div className="content__first">
           <div className="table">
-            <div className="brown__table1"></div>
+            <div className="brown__table1">
+              <span>金融機関</span>
+            </div>
             <div className="brown__table2"></div>
           </div>
           <div className="table">
-            <div className="brown__table1"></div>
+            <div className="brown__table1">
+              <span>支店</span>
+            </div>
             <div className="brown__table2"></div>
           </div>
           <div className="table">
-            <div className="brown__table1"></div>
+            <div className="brown__table1">
+              <span>口座番号</span>
+            </div>
             <div className="brown__table2"></div>
           </div>
           <div className="table">
-            <div className="brown__table1"></div>
+            <div className="brown__table1">
+              <span>受取人名</span>
+            </div>
             <div className="brown__table2"></div>
           </div>
 
           <div className="table">
-            <div className="brown__table11"></div>
+            <div className="brown__table11">
+              <span>振込先口座の登</span>
+              <span>録</span>
+            </div>
             <div className="brown__table21"></div>
           </div>
         </div>
@@ -34,19 +47,30 @@ function Brown(props) {
             <span>振込内容</span>
           </div>
           <div className="table">
-            <div className="brown__table1"></div>
+            <div className="brown__table1">
+              <span>受取人名</span>
+            </div>
             <div className="brown__table2"></div>
           </div>
           <div className="table">
-            <div className="brown__table1 __item"></div>
+            <div className="brown__table1 __item">
+              <span>振込手数料</span>
+              <span>（税込）</span>
+            </div>
             <div className="brown__table2 __item2"></div>
           </div>
           <div className="table">
-            <div className="brown__table1"></div>
+            <div className="brown__table1">
+              {" "}
+              <span>振込予定日</span>
+            </div>
             <div className="brown__table2"></div>
           </div>
           <div className="table">
-            <div className="brown__table1"></div>
+            <div className="brown__table1">
+              {" "}
+              <span>管理番号</span>
+            </div>
             <div className="brown__table2"></div>
           </div>
         </div>
