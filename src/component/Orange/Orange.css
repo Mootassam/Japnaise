@@ -400,3 +400,12 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.small__currency {
+  color: #242827;
+  font-family: Roboto;
+  font-size: 10.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -98,15 +98,18 @@ function Orange(props) {
             <div className="smallbar__orange">
               <img src="/Orange/smallbar.png" alt="" />
             </div>
-
             <div className="after__bar">
-              <div  className="bar__oranges">
+              <div className="bar__oranges">
                 <div className="second__orangetitle">振込金額</div>
-                <div className="second__amount">5,000,000</div>
+                <div className="second__amount">
+                  5,000,000 <label className="small__currency">円</label>
+                </div>
               </div>
               <div className="bar__oranges">
                 <div className="second__orangetitle">振込手数料</div>
-                <div className="second__amount">330</div>
+                <div className="second__amount">
+                  330 <label className="small__currency">円</label>
+                </div>
               </div>
             </div>
           </div>
