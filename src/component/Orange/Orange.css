@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.app__orange {
+  width: 370px;
+  height: 794px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Styling the orange Header  */
+.orange__header {
+  padding: 9px 30px 0 31px;
+}
+
+.orange__time {
+  color: #000;
+  font-family: Inter;
+  font-size: 15.7px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.orange__confirm > span {
+  color: #000;
+  font-family: Inter;
+  font-size: 13.8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.orange__cancel > span {
+  color: #2b423a;
+  font-family: Inter;
+  font-size: 13.8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* styling the subheader */
+
+.orange__subheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px 0 15px;
+}
+
+.orange__bar {
+  padding-top: 7px;
+  display: flex;
+}
+
+/* styling the orange bottom */
+
+.sub__bottom {
+  width: 370px;
+  height: 47px;
+  background-image: url("/Orange/notclear.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.orange__button {
+  width: 342px;
+  height: 40px;
+  border-radius: 21px;
+  background: #eb8833;
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+
+.orange__button > span {
+  color: #fff;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.orange__stylebutton {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.orange__textbutton {
+  color: #404040;
+  font-family: Roboto;
+  font-size: 10.1px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.orange__textbottom {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-bottom: 12px;
+}
+.orange__transaprent {
+  display: flex;
+  flex-direction: column;
+  padding: 0 29px 0 26px;
+  gap: 10px;
+  position: relative;
+  top: 19px;
+  z-index: 1;
+}
+
+.transparent__1,
+.transparent__2 {
+  color: rgba(239, 239, 239, 0.95);
+  font-family: Inter;
+  font-size: 11.3px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.transparent__content {
+  display: flex;
+  justify-content: space-between;
+  width: 315px;
+}
+
+.orange__updwon {
+  position: relative;
+}
+
+.orange__bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/* styling the content orange */
+.app__content {
+}
+.image__vector {
+  display: flex;
+}
+.__p14 {
+  padding-left: 14px;
+}
+.__p15 {
+  padding-right: 15px;
+}
+.__down14 {
+  margin-bottom: 14px;
+}
+
+.orange__titles {
+  color: #000;
+  font-family: Inter;
+  font-size: 13.805px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.orange__firstline {
+  padding-bottom: 14px;
+  padding-top: 28.2px;
+}
+
+.orange__secondline {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+}
+
+.orange__code {
+  color: #484848;
+  font-family: Hannari, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  font-size: 15.4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.616px;
+}
+
+.orange__chinese {
+  color: #454547;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.orange__thirdline {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 12px;
+}
+.green {
+  color: #2b423a;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.orange__fourthline {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.orange__gmo {
+  color: #454547;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.chinese__orange {
+  color: #454547;
+  font-family: Roboto;
+  font-size: 13.6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chinse__orangecode {
+  color: #484848;
+  font-family: Hannari, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  font-size: 15.4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.orange__fifthline {
+  padding-top: 11px;
+}
+.orange__border {
+  width: 106px;
+  height: 27px;
+  border-radius: 13.5px;
+  border: 1px solid #e1e1e1;
+  display: grid;
+  place-items: center;
+  margin-bottom: 12px;
+}
+
+.orange__border > span {
+  color: #2b423a;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.long__text {
+  color: #404040;
+  font-family: Inter;
+  font-size: 10.3px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sithline__title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sithline__right {
+  color: #2b423a;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sithline__firstline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.orange__background {
+  width: 341px;
+  height: 132px;
+  background: #f5f7f6;
+  margin-top: 10px;
+  padding-top: 22px;
+}
+
+.orange__lastline {
+  padding-top: 8px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallbar__orange > img {
+  margin: auto;
+  display: flex;
+}
+.background__first {
+  display: flex;
+  align-items: baseline;
+  padding-left: 14px;
+}
+
+.background__first__amout {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  padding-right: 12px;
+  padding-bottom: 10px;
+}
+
+.background__first > span {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 11.8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.orange__bigamount {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.orange___stlylecurrency {
+  color: #000;
+  font-family: Roboto;
+  font-size: 10.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.after__bar {
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+  padding-right: 12px;
+  gap: 5px;
+  padding-top: 5px;
+}
+
+.bar__oranges {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second__orangetitle {
+  color: #454547;
+  font-family: Roboto;
+  font-size: 11.8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.second__amount {
+  color: #242827;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
