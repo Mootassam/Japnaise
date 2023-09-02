@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "Kremlin Minister";
+  src: url("/src/assets/fonts/kremlin\ minister\ bold.ttf") format("ttf"); /* Modern Browsers */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap");
+.app__green {
+  width: 440px;
+  height: 787px;
+  background-color: #dedede;
+  position: relative;
+}
+
+.green__header {
+  width: 440px;
+  height: 265.337px;
+  flex-shrink: 0;
+  background: linear-gradient(
+    180deg,
+    #59be96 3.76%,
+    #58bc96 23.77%,
+    #51ac9d 48.78%,
+    #50ac9d 78.3%,
+    #43939b 99.82%
+  );
+  display: flex;
+  padding-top: 5px;
+  justify-content: center;
+}
+
+.green__content {
+  position: absolute;
+  width: 430px;
+  height: 660.915px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #fff;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content__circle {
+  top: -55px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: relative;
+  width: 116px;
+  height: 116px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.circle__content {
+  width: 94px;
+  height: 95px;
+  border: 1.5px solid #e8eae9;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+/* styling the header */
+.text__header {
+  color: #fff;
+  font-family: Inter;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 21px */
+}
+
+.green__bigtitle {
+  position: relative;
+  top: -55px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+}
+
+.green__bigtitle > h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 26.5px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 99.99%; /* 26.497px */
+}
+.green__amount {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  top: -55px;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+.green__amount > h1 {
+  color: #000;
+  font-family: Kremlin Minister;
+  font-size: 63px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.symbole {
+  color: #000;
+  font-family: Inter;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 99.99%; /* 30.997px */
+  letter-spacing: 1.24px;
+}
+
+.green__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -55px;
+  flex-direction: column;
+}
+
+.description__145 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description__145 > span {
+  color: #8f8f8f;
+  font-family: Inter;
+  font-size: 18.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 99.99%; /* 18.498px */
+  padding-top: 16px;
+}
+
+.description__button {
+  border-radius: 20.5px;
+  background: #5eba7f;
+  width: 106px;
+  height: 41px;
+  margin-top: 22px;
+  display: grid;
+  place-items: center;
+}
+
+.description__button > span {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 99.99%; /* 19.998px */
+}
+
+.grenn__smalldescription {
+  color: #8f8f8f;
+  font-family: Inter;
+  font-size: 15.9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 99.99%; /* 15.898px */
+  margin-top: 19px;
+}
+
+.green__dardescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 22px;
+  padding-bottom: 16px;
+}
+
+.green__dardescription > span:nth-child(1) {
+  color: #000;
+  font-family: Inter;
+  font-size: 22.7px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 99.99%; /* 22.698px */
+}
+
+.green__dardescription > span:nth-child(2) {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 99.99%; /* 23.998px */
+}
+
+.green__blue {
+  margin-top: 16px;
+}
+.green__blue > span {
+  color: #5589dc;
+  font-family: Open Sans Hebrew;
+  font-size: 18.58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 102%; /* 18.952px */
+}
+
+/* styling the desctiption */
+
+.green__detaill {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -55px;
+  padding-left: 34px;
+  padding-right: 29px;
+  padding-top: 31px;
+}
+.green__detaill > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 367px;
+}
+
+.first__detail {
+  color: #606060;
+  font-family: Inter;
+  font-size: 15.7px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 102%; /* 16.014px */
+}
+.second__detail {
+  color: #8f8f8f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15.7px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 102%; /* 16.014px */
+}
+.details {
+  padding-bottom: 19px;
+}
+
+.last {
+  /* padding-bottom: 15px; */
+}
+
+.bar__detail {
+  padding: 15px 0 15px;
+}
+
+/* styling the content */
+.circle__1 {
+  width: 33px;
+  height: 33px;
+  background: linear-gradient(
+    179deg,
+    #95908a 1.25%,
+    #a69f97 19.87%,
+    #aea9a0 38.18%,
+    #b8b3ad 58.9%
+  );
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 99.99%; /* 14.999px */
+}
+.level__1 {
+  padding-top: 4px;
+  padding-left: 35px;
+}
+
+.number__1 > span {
+  color: #000;
+  font-family: Inter;
+  font-size: 8.8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.number__1 {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  gap: 2px;
+}

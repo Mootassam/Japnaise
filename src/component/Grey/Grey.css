@@ -1,0 +1,266 @@
+.app__grey {
+  width: 370px;
+  height: 790px;
+  background-color: #fff;
+  position: relative;
+}
+
+.grey__header {
+  width: 100%;
+  height: 86px;
+  border-bottom: 1.2px solid #ebebeb;
+  background: #fff;
+}
+.header__time {
+  padding: 10px 27px 20px 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* styling the global battery */
+.battery__global {
+  width: 24px;
+  height: 14px;
+  border-radius: 4px;
+  background: #b7b7b7;
+  position: relative;
+  display: grid;
+}
+.battery__black {
+  width: 11px;
+  height: 14px;
+  flex-shrink: 0;
+  border-radius: 4px 0px 0px 4px;
+  background: #000;
+}
+.percentage {
+  position: absolute;
+  top: 50%; /* Position the element 50% from the top of the container */
+  left: 50%; /* Position the element 50% from the left of the container */
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: Inter;
+  font-size: 12.7px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.time > span {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.grey__subheader {
+  color: #000;
+  font-family: "Inter";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* srtyling the greybottom */
+
+.grey__bottom {
+  width: 369px;
+  height: 32px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grey__border {
+  width: 133px;
+  height: 5px;
+  border-radius: 23px;
+  background: #000;
+}
+.level2__box {
+  display: flex;
+  align-items: center;
+  padding-left: 27px;
+}
+.level2__box > span {
+  color: #fff;
+  font-family: Inter;
+  font-size: 12.4px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.grey__content {
+  background-image: url("Grey/background.png");
+  background-size: cover;
+  height: 670px;
+}
+
+/* styling the content */
+
+.level__1 {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding-right: 36px;
+}
+
+.square__yellow {
+  width: 51px;
+  height: 34px;
+  border-radius: 5px;
+  border: 0.7px solid #d8ac29;
+  background: #fec92b;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.triangle__ {
+  position: relative;
+  top: 9px;
+}
+
+/* styling the content level2 */
+
+.level__2__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: Inter;
+  font-size: 12.4px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 21px;
+  padding-bottom: 6px;
+}
+.level2__box {
+  width: 341px;
+  height: 25px;
+  background: #4d4d4d;
+  margin: auto;
+}
+
+.level2__detail {
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+  gap: 15px;
+  padding-top: 14px;
+}
+.level2__detail > div {
+  display: grid;
+  grid-template-columns: 75px auto;
+  gap: 49px;
+}
+
+.level2__detail > div > span {
+  color: #000;
+  font-family: Inter;
+  font-size: 12.4px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* styling the level3 */
+
+.button__ {
+  width: 275px;
+  height: 43px;
+  border-radius: 7px;
+  border: 0.5px solid #8b8b8b;
+  background: linear-gradient(
+    184deg,
+    #dbdbdb 3.45%,
+    #d2d2d2 35.5%,
+    #cfcfcf 67.36%,
+    #c4c4c4 96.54%,
+    #c5c5c5 96.54%
+  );
+  color: #000;
+  font-family: Inter;
+  font-size: 17.8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: grid;
+  place-content: center;
+  margin: auto;
+}
+.button__ {
+  display: flex;
+  align-items: center;
+  padding-left: 85px;
+}
+.button__ > img {
+  margin-left: 76px;
+}
+
+.level__3 {
+  padding-top: 24px;
+}
+.level__4 {
+  padding-top: 10px;
+  padding-left: 16px;
+}
+.level__4 > span {
+  color: #797979;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button__1 {
+  width: 88px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 0.5px solid #8b8b8b;
+  background: linear-gradient(
+    184deg,
+    #c1c1c1 3.45%,
+    #c4c4c4 22.3%,
+    #d2d2d2 51.91%,
+    #d4d4d4 69.31%,
+    #c4c4c4 96.54%,
+    #dadada 96.54%
+  );
+  color: #000;
+  font-family: Inter;
+  font-size: 11.9px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: grid;
+  place-items: center;
+}
+
+.button__second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 14px;
+}
