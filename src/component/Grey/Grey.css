@@ -95,14 +95,14 @@
 .level2__box > span {
   color: #fff;
   font-family: Inter;
-  font-size: 12.4px;
+  font-size: 13.5px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
 .grey__content {
-  background-image: url("Grey/background.png");
+  background-image: url("/Grey/background.png");
   background-size: cover;
   height: 670px;
 }
