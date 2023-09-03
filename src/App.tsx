@@ -9,6 +9,7 @@ import Large from "./component/Large/Large";
 import Grey from "./component/Grey/Grey";
 import Brown from "./component/Brown/Brown";
 import Orange from "./component/Orange/Orange";
+import Completed from "./component/Completed/Completed";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -43,6 +44,7 @@ function App() {
           {value === "Grey" && <Grey amount={amount} />}
           {value === "Brown" && <Brown amount={amount} />}
           {value === "orange" && <Orange amount={amount} />}
+          {value === "completed" && <Completed amount={amount} />}
         </div>
         <div></div>
         <div></div>
