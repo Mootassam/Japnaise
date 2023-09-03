@@ -1,11 +1,13 @@
 import React from "react";
 import "./Brown.css";
+import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Brown(props) {
   return (
     <div className="app__brown">
       <div className="brown__header">
         <div className="brownheader__left">
-          <span className="time__brown">17:19</span>
+          <span className="time__brown">{Dates.currentTime()}</span>
         </div>
         <div className="brownheader__right">
           <div className="brown__battery">
@@ -44,7 +46,7 @@ function Brown(props) {
             </div>
             <div className="brown__table2 __center">
               <span className="text__">（普通） </span>
-              <span className="number">1565113</span>
+              <span className="number">{Number.generateRandom7Number()}</span>
             </div>
           </div>
           <div className="table">
@@ -75,7 +77,7 @@ function Brown(props) {
             </div>
             <div className="brown__table2 __end">
               <span className="brown__amount ">
-                3,000,000 <span className="brown__currency">円</span>
+                {Number.japanesse(props.amount)} <span className="brown__currency">円</span>
               </span>
             </div>
           </div>
@@ -133,7 +135,7 @@ function Brown(props) {
               <span>振込予定日</span>
             </div>
             <div className="brown__table2 __center">
-              <span className="brown__date"> 2023/07/05</span>
+              <span className="brown__date"> {Dates.lividate()}</span>
             </div>
           </div>
           <div className="table  ">
@@ -141,7 +143,7 @@ function Brown(props) {
               <span>管理番号</span>
             </div>
             <div className="brown__table2  __lastone">
-              <span className="brown__accountnumber">20230705-18992112</span>
+              <span className="brown__accountnumber">{Dates.generateRandomDateNumber()}-18{Number.genrateRandom6Number()}</span>
             </div>
           </div>
         </div>

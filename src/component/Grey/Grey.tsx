@@ -1,12 +1,15 @@
 import React from "react";
 import "./Grey.css";
+import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
+import Names from "../../shared/Names";
 function Grey(props) {
   return (
     <div className="app__grey">
       <div className="grey__header">
         <div className="header__time">
           <div className="time">
-            <span>17:08</span>
+            <span>{Dates.currentTime()}</span>
           </div>
           <div className="battery">
             <div className="battery__global">
@@ -44,7 +47,7 @@ function Grey(props) {
           </div>
           <div className="level2__box">
             <span> 管理番号：</span>
-            <span> 21441803322023082911273733</span>
+            <span> 2144180332{Dates.generateRandomDateNumber()}1{Number.generateRandom7Number()}</span>
           </div>
           <div className="level2__detail">
             <div>
@@ -57,7 +60,7 @@ function Grey(props) {
             </div>
             <div>
               <span>依頼人名</span>
-              <span>ヨネタ ケンイチ</span>
+              <span>{Names.generateRandomFullNameFromJapanese()}</span>
             </div>
             <div>
               <span>预金科目</span>
@@ -65,7 +68,7 @@ function Grey(props) {
             </div>
             <div>
               <span>口座番号</span>
-              <span>7855654</span>
+              <span>{Number.generateRandom7Number()}</span>
             </div>
             <div>
               <span>受取人名</span>
@@ -73,7 +76,7 @@ function Grey(props) {
             </div>
             <div>
               <span>振込金額</span>
-              <span>50,000 円</span>
+              <span>{Number.japanesse(props.amount)} 円</span>
             </div>
             <div>
               <span>振込手数料</span>
@@ -85,7 +88,7 @@ function Grey(props) {
             </div>
             <div>
               <span>振込予定日</span>
-              <span>2023 年 08月29 日</span>
+              <span>{Dates.fulljpaanes()}</span>
             </div>
           </div>
         </div>

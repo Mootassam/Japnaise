@@ -1,13 +1,15 @@
 import React from "react";
 import "./Orange.css";
 import { IoIosWifi } from "react-icons/io";
+import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Orange(props) {
   return (
     <div className="app__orange">
       {/* styling the orange header */}
       <div className="orange__header">
         <div className="orange__left">
-          <span className="orange__time">13:55</span>
+          <span className="orange__time">{Dates.currentTime()}</span>
         </div>
         <div className="orange__right">
           <div className="oragne__data">
@@ -58,7 +60,7 @@ function Orange(props) {
           </span>
           <div className="orange__text">
             <span className="orange__chinese">残高別普通</span>
-            <span className="orange__code">8407105</span>
+            <span className="orange__code">{Number.generateRandom7Number()}</span>
           </div>
         </div>
         <div className="image__vector">
@@ -113,7 +115,6 @@ function Orange(props) {
           <div className="sithline__firstline">
             <span className="sithline__title">振込金額</span>
             <span className="sithline__right">
-              {" "}
               <img src="/Orange/pen.png" alt="" width="10" height={12} /> 变更
             </span>
           </div>
@@ -122,7 +123,7 @@ function Orange(props) {
               <span>引落金額</span>
             </div>
             <div className="background__first__amout">
-              <div className="orange__bigamount">5,000,330</div>
+              <div className="orange__bigamount">{Number.totalamount(props.amount)}</div>
               <span className="orange___stlylecurrency">円</span>
             </div>
             <div className="smallbar__orange">
@@ -132,7 +133,7 @@ function Orange(props) {
               <div className="bar__oranges">
                 <div className="second__orangetitle">振込金額</div>
                 <div className="second__amount">
-                  5,000,000 <label className="small__currency">円</label>
+                  {Number.japanesse(props.amount)} <label className="small__currency">円</label>
                 </div>
               </div>
               <div className="bar__oranges">
@@ -158,11 +159,11 @@ function Orange(props) {
           <div className="orange__transaprent">
             <div className="transparent__content">
               <span className="transparent__1">依赖日(资金引落日）</span>
-              <span className="transparent__2">2023年07 月05日(水)</span>
+              <span className="transparent__2">{Dates.datetransparent()}(水)</span>
             </div>
             <div className="transparent__content">
               <div className="transparent__1">振达日</div>
-              <span className="transparent__2">2023年07 月05日(水)</span>
+              <span className="transparent__2">{Dates.datetransparent()}(水)</span>
             </div>
           </div>
           <div className="orange__stylebutton">

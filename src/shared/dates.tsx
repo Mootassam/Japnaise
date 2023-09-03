@@ -18,7 +18,6 @@ class Dates {
 
   static lividate() {
     const dateTime = moment().format("YYYY/MM/DD");
-
     return dateTime;
   }
 
@@ -35,6 +34,13 @@ class Dates {
   static recebido() {
     const date = moment().format("DD MMM YYYY HH:mm:ss");
     return date;
+  }
+
+  static formatDateToJapanese() {
+    return moment().format("MM月DD日");
+  }
+  static datetransparent() {
+    return moment().format("YYYY月MM DD日");
   }
 
   static fulldate() {
@@ -66,12 +72,21 @@ class Dates {
     return formattedDate;
   }
 
+  
+
   static generateRandomDateNumber() {
     const currentDate = moment();
     const formattedDate = currentDate.format("YYYYMMDD");
     return formattedDate;
   }
 
+
+  static fulljpaanesedate() {
+    return moment().format('YYYY年MM月DD日');
+  }
+  static fulljpaanes() {
+    return moment().format('YYYY 年 MM月DD日');
+  }
   static personalblack() {
     const currentDate = moment();
     const fomattedDate = currentDate.format("DD MMM YYYY - HH:mm:ss");

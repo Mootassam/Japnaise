@@ -13,6 +13,12 @@ class Number {
     const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
     return randomNumber;
   }
+  static generateRandom2Number() {
+    const min = 10; // Minimum four-digit number (inclusive)
+    const max = 99; // Maximum four-digit number (inclusive)
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
+  }
 
   static generateRandom9Number() {
     const min = 100000000;
@@ -22,14 +28,14 @@ class Number {
   }
 
   static generateRandomString() {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    let randomString = '';
-  
+    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    let randomString = "";
+
     for (let i = 0; i < 6; i++) {
       const randomIndex = Math.floor(Math.random() * characters.length);
       randomString += characters.charAt(randomIndex);
     }
-  
+
     return randomString;
   }
 
@@ -59,15 +65,21 @@ class Number {
     return item;
   }
 
-  static hongkong(amount) {
+  static japanesse(amount) {
     const exchangeRate = 1; // Replace with the actual exchange rate
-    const hkdAmount = amount * exchangeRate;
-    return hkdAmount
-      .toLocaleString("en-HK", {
+    const jpyAmount = amount * exchangeRate;
+    return jpyAmount
+      .toLocaleString("ja-JP", {
         style: "currency",
-        currency: "HKD",
+        currency: "JPY",
       })
-      .replace("HK$", "");
+      .replace("￥", "");
+  }
+
+  static totalamount(amount) {
+    const amounts = 330;
+    const total = parseInt(amount) + amounts;
+    return this.japanesse(total);
   }
 
   static hongkongstyle2(amount) {

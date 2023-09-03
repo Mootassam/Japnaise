@@ -2,6 +2,8 @@ import React from "react";
 import "./completed.css";
 import Dates from "../../shared/dates";
 import { MdQuestionMark } from "react-icons/md";
+import Number from "../../shared/Number";
+import Names from "../../shared/Names";
 
 function Completed(props) {
   return (
@@ -37,7 +39,7 @@ function Completed(props) {
       </div>
       <div className="completed__subheader">
         <div className="subheader__fulloptions">
-            <div></div>
+          <div></div>
           <div className="subheadercompleted__title">振込完了</div>
           <div>
             <img src="/completed/cancel.png" alt="" width={76} height={18} />
@@ -56,8 +58,13 @@ function Completed(props) {
               <span>受付日時 :</span>
             </div>
             <div className="date__right">
-              <span>20230705-001</span>
-              <span>2023/07/05 12:09</span>
+              <span>
+                {Dates.generateRandomDateNumber()}-
+                {Number.generate3RandomNumber()}
+              </span>
+              <span>
+                {Dates.lividate()} {Dates.currentTime()}
+              </span>
             </div>
           </div>
         </div>
@@ -67,7 +74,9 @@ function Completed(props) {
             <div className="table__grey table__centers p__13 p__10">
               振込予定日
             </div>
-            <div className="dates__ table__centers p__8 p__10">2023/07/05</div>
+            <div className="dates__ table__centers p__8 p__10">
+              {Dates.lividate()}
+            </div>
           </div>
           <div className="table2">
             <div className="table__grey table__centers p__13">振込先口座</div>
@@ -88,7 +97,8 @@ function Completed(props) {
               振込金額
             </div>
             <div className="table3__amount table__centers p__11 p__8">
-              800,000<span className="size16">円</span>
+              {Number.japanesse(props.amount)}
+              <span className="size16">円</span>
             </div>
           </div>
           <div className="table4">
@@ -105,7 +115,8 @@ function Completed(props) {
               引落金額合計
             </div>
             <div className="table3__amount table__centers p__8 p__11">
-              800,000<span className="size16">円</span>
+              {Number.totalamount(props.amount)}
+              <span className="size16">円</span>
             </div>
           </div>
           <div className="table6">
@@ -113,18 +124,25 @@ function Completed(props) {
             <div className="table6__text p__8 p__11">
               <div>日比谷支店</div>
               <div>普通</div>
-              <div className="table6__amount">5062352</div>
+              <div className="table6__amount">
+                {Number.generateRandom7Number()}
+              </div>
             </div>
           </div>
           <div className="table7">
             <div className="table__grey table__centers p__13">振込依頼人名</div>
-            <div className="table7__text p__8 p__11">ヌノザキ ヨシキ</div>
+            <div className="table7__text p__8 p__11">
+              {Names.generateRandomFullNameFromJapanese()}
+            </div>
           </div>
           <div className="table8">
             <div className="table__grey table__centers p__13 P__8  ">
               電話番号
             </div>
-            <div className="table8__code p__8 p__11">090-8342-10**</div>
+            <div className="table8__code p__8 p__11">
+              090-{Number.generate4RandomNumber()}-
+              {Number.generateRandom2Number()}**
+            </div>
           </div>
         </div>
         <div className="completed__subtable">

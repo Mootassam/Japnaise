@@ -1,5 +1,8 @@
 import React from "react";
 import "./Green.css";
+import Number from "../../shared/Number";
+import Dates from "../../shared/dates";
+import Names from "../../shared/Names";
 function Green(props) {
   return (
     <div className="app__green">
@@ -20,7 +23,7 @@ function Green(props) {
         </div>
 
         <div className="green__amount">
-          <h1>1,000,000</h1>
+          <h1>{Number.japanesse(props.amount)}</h1>
           <span className="symbole">円</span>
         </div>
 
@@ -35,7 +38,7 @@ function Green(props) {
           </div>
           <div className="grenn__smalldescription">振込指定日</div>
           <div className="green__dardescription">
-            <span>07月05日</span>
+            <span>{Dates.formatDateToJapanese()}</span>
             <span>（水曜日）</span>
           </div>
           <img src="/green/bar.png" alt="" />
@@ -56,22 +59,31 @@ function Green(props) {
             </div>
             <div className="details">
               <span className="first__detail">预金科目 囗座番号</span>
-              <span className="second__detail">普通 1565113</span>
+              <span className="second__detail">
+                普通 {Number.generateRandom7Number()}
+              </span>
             </div>
             <div className="details">
               <span className="first__detail">振込受付日</span>
-              <span className="second__detail">07月05日（水曜曰）</span>
+              <span className="second__detail">
+                {Dates.formatDateToJapanese()}（水曜曰）
+              </span>
             </div>
             <div className="last">
               <span className="first__detail">依頼人名</span>
-              <span className="second__detail">カガヤマ セイジ</span>
+              <span className="second__detail">
+                {Names.generateRandomFullNameFromJapanese()}
+              </span>
             </div>
             <div className="bar__detail">
               <img src="/green/bar.png" alt="" />
             </div>
             <div>
               <span className="first__detail">受付番号</span>
-              <span className="second__detail">202307050112235</span>
+              <span className="second__detail">
+                {Dates.generateRandomDateNumber()}011
+                {Number.generateRandom4Number()}
+              </span>
             </div>
           </div>
         </div>

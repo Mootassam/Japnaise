@@ -1,5 +1,8 @@
 import React from "react";
 import "./Large.css";
+import Number from "../../shared/Number";
+import Names from "../../shared/Names";
+import Dates from "../../shared/dates";
 function Large(props) {
   return (
     <div className="app__large">
@@ -13,7 +16,6 @@ function Large(props) {
             </div>
             <div className="large__ligne"></div>
           </div>
-
           <div className="first__content">
             <div className="__ligne">
               <div className="first__element first__color">
@@ -43,7 +45,7 @@ function Large(props) {
                 <span className="chinese__tabletext">囗座番号</span>
               </div>
               <div className="second__element __number second__thirdcolor">
-                1565113
+                156{Number.generate4RandomNumber()}
               </div>
             </div>
             <div className="__ligne">
@@ -82,7 +84,7 @@ function Large(props) {
                   <span className="chinese__tabletext">振込指定日</span>
                 </div>
                 <div className="second__element second__fristcolor">
-                  <span className=" __amount__large">2023年07月05日</span>
+                  <span className=" __amount__large">{Dates.fulljpaanesedate()}</span>
                 </div>
               </div>
               <div className="__ligne">
@@ -90,7 +92,7 @@ function Large(props) {
                   <span className="chinese__tabletext">振込金額</span>
                 </div>
                 <div className="second__element __amount__large second__thirdcolor">
-                  3,000,000円
+                  {Number.japanesse(props.amount)}円
                 </div>
               </div>
               <div className="__ligne">
@@ -106,7 +108,7 @@ function Large(props) {
                   <span className="chinese__tabletext ">合計金額</span>
                 </div>
                 <div className="second__element __number __amount__large second__thirdcolor ">
-                  3,000,330円
+                {Number.totalamount(props.amount) }円
                 </div>
               </div>
               <div className="__ligne">
@@ -114,7 +116,7 @@ function Large(props) {
                   <span className="chinese__tabletext">振込依頼人</span>
                 </div>
                 <div className="second__element __last__item">
-                  <img src="/Large/text2.png" alt="" width={94} />
+         {Names.generateRandomFullNameFromJapanese()}
                 </div>
               </div>
             </div>
