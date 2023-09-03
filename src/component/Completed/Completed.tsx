@@ -4,6 +4,8 @@ import Dates from "../../shared/dates";
 import { MdQuestionMark } from "react-icons/md";
 import Number from "../../shared/Number";
 import Names from "../../shared/Names";
+import { BsFillAlarmFill } from "react-icons/bs";
+import Left from "../../shared/icons/Left";
 
 function Completed(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
@@ -45,6 +47,8 @@ function Completed(props) {
           <div className="completed__time">{Dates.currentTime()}</div>
         </div>
         <div className="completed__right">
+
+          <Left />
           <div className="right__batterycompleted">
             <span className="completed__level">{limit}%</span>
             <div className="completed__battery">

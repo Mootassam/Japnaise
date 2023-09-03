@@ -25,6 +25,8 @@
   padding-top: 5px;
   padding-right: 7px;
   padding-left: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .completed__level {
@@ -51,11 +53,11 @@
   display: flex;
   gap: 6px;
   align-items: center;
-  padding-right: 98px;
+  padding-right: 107px;
 }
 .completed__center {
   display: flex;
-  padding-right: 150px;
+
 }
 .softbank__ {
   display: flex;
@@ -75,7 +77,8 @@
 .completed__right {
   display: flex;
   align-items: center;
-  gap: 2px;
+  justify-content: flex-end;
+  gap: 5px;
 }
 
 .right__batterycompleted {
