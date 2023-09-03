@@ -16,37 +16,43 @@ function Large(props) {
 
           <div className="first__content">
             <div className="__ligne">
-              <div className="first__element">
+              <div className="first__element first__color">
                 <span className="chinese__tabletext">金融機関</span>
               </div>
-              <div className="second__element">
+              <div className="second__element second__fristcolor">
                 GMO
                 <span className="second__gmo">あおぞらネット銀行</span>
               </div>
             </div>
             <div className="__ligne">
-              <div className="first__element">
+              <div className="first__element background first__secondcolor">
                 <span className="chinese__tabletext">支店</span>
               </div>
-              <div className="second__element">法人第二常業部</div>
+              <div className="second__element second__thirdcolor">
+                法人第二常業部
+              </div>
             </div>
             <div className="__ligne">
-              <div className="first__element">
+              <div className="first__element first__color">
                 <span className="chinese__tabletext">科目</span>
               </div>
-              <div className="second__element">普通</div>
+              <div className="second__element second__fristcolor">普通</div>
             </div>
             <div className="__ligne">
-              <div className="first__element">
+              <div className="first__element first__secondcolor">
                 <span className="chinese__tabletext">囗座番号</span>
               </div>
-              <div className="second__element __number">1565113</div>
+              <div className="second__element __number second__thirdcolor">
+                1565113
+              </div>
             </div>
             <div className="__ligne">
               <div className="first__element __last__item">
                 <span className="chinese__tabletext">受取人</span>
               </div>
-              <div className="second__element __last__item"></div>
+              <div className="second__element __last__item">
+                <img src="/Large/tex1.png" alt="" width={112} />
+              </div>
             </div>
           </div>
         </div>
@@ -72,37 +78,44 @@ function Large(props) {
 
             <div className="first__content">
               <div className="__ligne">
-                <div className="first__element">
+                <div className="first__element first__color">
                   <span className="chinese__tabletext">振込指定日</span>
                 </div>
-                <div className="second__element">
-              
+                <div className="second__element second__fristcolor">
                   <span className=" __amount__large">2023年07月05日</span>
                 </div>
               </div>
               <div className="__ligne">
-                <div className="first__element">
+                <div className="first__element first__secondcolor">
                   <span className="chinese__tabletext">振込金額</span>
                 </div>
-                <div className="second__element __amount__large">3,000,000円</div>
+                <div className="second__element __amount__large second__thirdcolor">
+                  3,000,000円
+                </div>
               </div>
               <div className="__ligne">
                 <div className="first__element">
-                  <span className="chinese__tabletext">手数料</span>
+                  <span className="chinese__tabletext first__color">
+                    手数料
+                  </span>
                 </div>
                 <div className="second__element __amount__large">330円</div>
               </div>
               <div className="__ligne">
-                <div className="first__element">
-                  <span className="chinese__tabletext">合計金額</span>
+                <div className="first__element first__secondcolor">
+                  <span className="chinese__tabletext ">合計金額</span>
                 </div>
-                <div className="second__element __number __amount__large">3,000,330円</div>
+                <div className="second__element __number __amount__large second__thirdcolor ">
+                  3,000,330円
+                </div>
               </div>
               <div className="__ligne">
                 <div className="first__element __last__item">
                   <span className="chinese__tabletext">振込依頼人</span>
                 </div>
-                <div className="second__element __last__item"></div>
+                <div className="second__element __last__item">
+                  <img src="/Large/text2.png" alt="" width={94} />
+                </div>
               </div>
             </div>
           </div>

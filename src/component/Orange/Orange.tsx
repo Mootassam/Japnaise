@@ -1,5 +1,6 @@
 import React from "react";
 import "./Orange.css";
+import { IoIosWifi } from "react-icons/io";
 function Orange(props) {
   return (
     <div className="app__orange">
@@ -9,7 +10,20 @@ function Orange(props) {
           <span className="orange__time">13:55</span>
         </div>
         <div className="orange__right">
-          <div className="orange__battery"></div>
+          <div className="oragne__data">
+            <div className="orange1"></div>
+            <div className="orange2"></div>
+            <div className="orange3"></div>
+            <div className="orange4"></div>
+          </div>
+
+          <IoIosWifi color="black" size={17} />
+          <div className="orange__battery">
+            <div className="large__orangebattery">
+              <div className="orange__level"></div>
+            </div>
+            <div className="border__batteryorange"></div>
+          </div>
         </div>
       </div>
 
@@ -64,7 +78,10 @@ function Orange(props) {
         </div>
 
         <div className="orange__fourthline __p14">
-<div> <img src="/Orange/text.png" alt=""  width={84} /></div>
+          <div>
+            {" "}
+            <img src="/Orange/text.png" alt="" width={84} />
+          </div>
 
           <div>
             <span className="orange__gmo">GMO</span>{" "}
@@ -83,7 +100,10 @@ function Orange(props) {
         </div>
         <div className="orange__fifthline __p14">
           <div className="orange__border">
-            <span>囗座左登録 <img src="/Orange/plus.png" alt="" width={9} height={9} /></span>
+            <span>
+              囗座左登録{" "}
+              <img src="/Orange/plus.png" alt="" width={9} height={9} />
+            </span>
           </div>
           <span className="long__text">
             ※ 次回のお取引からワンタイムパスワードの入カが不要になります。

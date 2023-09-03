@@ -102,7 +102,6 @@ function Brown(props) {
                   <span className="amount__semi">1,101</span>
                   <span className="title__amount">ポイント</span>
                 </div>
-
                 <div className="large__cadre">
                   <div className="cadre__top">
                     <div className="large__left">

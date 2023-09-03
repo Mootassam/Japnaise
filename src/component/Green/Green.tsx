@@ -41,6 +41,7 @@ function Green(props) {
           <img src="/green/bar.png" alt="" />
           <div className="green__blue">
             <span>詳細を閉じる</span>
+            <img src="/green/up.png" alt="" width={20} height={10} />
           </div>
         </div>
         <div>
@@ -55,22 +56,22 @@ function Green(props) {
             </div>
             <div className="details">
               <span className="first__detail">预金科目 囗座番号</span>
-              <span  className="second__detail" >普通 1565113</span>
+              <span className="second__detail">普通 1565113</span>
             </div>
             <div className="details">
               <span className="first__detail">振込受付日</span>
-              <span  className="second__detail">07月05日（水曜曰）</span>
+              <span className="second__detail">07月05日（水曜曰）</span>
             </div>
             <div className="last">
               <span className="first__detail">依頼人名</span>
-              <span  className="second__detail">カガヤマ  セイジ</span>
+              <span className="second__detail">カガヤマ セイジ</span>
             </div>
             <div className="bar__detail">
               <img src="/green/bar.png" alt="" />
             </div>
             <div>
               <span className="first__detail">受付番号</span>
-              <span  className="second__detail">202307050112235</span>
+              <span className="second__detail">202307050112235</span>
             </div>
           </div>
         </div>

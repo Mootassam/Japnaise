@@ -203,6 +203,8 @@
 
 .green__blue {
   margin-top: 16px;
+  display: flex;
+  gap: 2px;
 }
 .green__blue > span {
   color: #5589dc;
@@ -274,7 +276,7 @@
   display: grid;
   place-items: center;
   color: #fff;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -297,6 +299,6 @@
 .number__1 {
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
   gap: 2px;
 }
