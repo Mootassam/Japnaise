@@ -45,7 +45,7 @@ function Large(props) {
                 <span className="chinese__tabletext">囗座番号</span>
               </div>
               <div className="second__element __number second__thirdcolor">
-                156{Number.generate4RandomNumber()}
+                1565113
               </div>
             </div>
             <div className="__ligne">

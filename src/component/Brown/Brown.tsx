@@ -78,7 +78,7 @@ function Brown(props) {
             </div>
             <div className="brown__table2 __center">
               <span className="text__">（普通） </span>
-              <span className="number">{Number.generateRandom7Number()}</span>
+              <span className="number">1565113</span>
             </div>
           </div>
           <div className="table">
