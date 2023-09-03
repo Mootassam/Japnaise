@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap");
 @font-face {
   font-family: "Kremlin Minister";
-  src: url("/src/fonts/kremlin minister bold.ttf") format("truetype");
+  src: url("fonts/kremlin minister bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
