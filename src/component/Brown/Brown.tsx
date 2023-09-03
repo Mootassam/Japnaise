@@ -5,7 +5,6 @@ function Brown(props) {
     <div className="app__brown">
       <div className="brown__header">
         <div className="brownheader__left">
-        
           <span className="time__brown">17:19</span>
         </div>
         <div className="brownheader__right">
@@ -75,8 +74,9 @@ function Brown(props) {
               <span>受取人名</span>
             </div>
             <div className="brown__table2 __end">
-              <span className="brown__amount ">3,000,000</span>
-              <span className="brown__currency">円</span>
+              <span className="brown__amount ">
+                3,000,000 <span className="brown__currency">円</span>
+              </span>
             </div>
           </div>
           <div className="table">
@@ -86,8 +86,9 @@ function Brown(props) {
             </div>
             <div className="brown__table2 __item2 __ends">
               <div className="__end">
-                <span className="brown__amount">145</span>
-                <span className="brown__currency">円</span>
+                <span className="brown__amount">
+                  145<span className="brown__currency">円</span>
+                </span>
               </div>
               <div className="brown__smalltable">
                 <div className="smallheader">
@@ -120,8 +121,9 @@ function Brown(props) {
                     </div>
                   </div>
                   <div className="last__items">
-                    <span className="last__amount">0</span>
-                    <span className="last__currency">円</span>
+                    <span className="last__amount">
+                      0<span className="last__currency">円</span>
+                    </span>
                   </div>
                 </div>
               </div>

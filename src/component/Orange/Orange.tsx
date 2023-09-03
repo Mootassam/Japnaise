@@ -38,9 +38,10 @@ function Orange(props) {
         <div className="image__vector">
           <img src="/Orange/vector.png" alt="" />
         </div>
-
         <div className="orange__secondline __p14">
-          <span className="orange__chinese">銀座 支店</span>
+          <span className="orange__chinese">
+            銀座&nbsp;&nbsp;&nbsp;&nbsp;支店
+          </span>
           <div className="orange__text">
             <span className="orange__chinese">残高別普通</span>
             <span className="orange__code">8407105</span>
@@ -51,14 +52,20 @@ function Orange(props) {
         </div>
 
         <div className="orange__thirdline __p14 __p15">
-          <span className="orange__chinese"> 振込先口座</span>
-          <span className="green">变更</span>
+          <span className="orange__titles"> 振込先口座</span>
+          <span className="green">
+            {" "}
+            <img src="/Orange/pen.png" alt="" width="10" height={12} />
+            变更
+          </span>
         </div>
         <div className="image__vector">
           <img src="/Orange/vector.png" alt="" />
         </div>
 
         <div className="orange__fourthline __p14">
+<div> <img src="/Orange/text.png" alt=""  width={84} /></div>
+
           <div>
             <span className="orange__gmo">GMO</span>{" "}
             <span className="chinese__orange">
@@ -67,7 +74,7 @@ function Orange(props) {
           </div>
           <div>
             <span className="chinese__orange">普通</span>
-            <span className="chinse__orangecode">1565113</span>
+            <span className="chinse__orangecode"> 1565113</span>
           </div>
         </div>
 
@@ -76,7 +83,7 @@ function Orange(props) {
         </div>
         <div className="orange__fifthline __p14">
           <div className="orange__border">
-            <span>囗座左登録</span>
+            <span>囗座左登録 <img src="/Orange/plus.png" alt="" width={9} height={9} /></span>
           </div>
           <span className="long__text">
             ※ 次回のお取引からワンタイムパスワードの入カが不要になります。
@@ -85,7 +92,10 @@ function Orange(props) {
         <div className="orange__sithline __p14 __p15">
           <div className="sithline__firstline">
             <span className="sithline__title">振込金額</span>
-            <span className="sithline__right">变更</span>
+            <span className="sithline__right">
+              {" "}
+              <img src="/Orange/pen.png" alt="" width="10" height={12} /> 变更
+            </span>
           </div>
           <div className="orange__background">
             <div className="background__first">
@@ -114,8 +124,10 @@ function Orange(props) {
             </div>
           </div>
           <div className="orange__lastline">
-            <span className="orange__chinese">振込詳細</span>
-            <span className="green">变更</span>
+            <span className="orange__chineses">振込詳細</span>
+            <span className="green">
+              <img src="/Orange/pen.png" alt="" width="10" height={12} /> 变更
+            </span>
           </div>
         </div>
       </div>

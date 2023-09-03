@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap");
 .app__orange {
   width: 370px;
   height: 794px;
@@ -25,7 +25,7 @@
   font-family: Inter;
   font-size: 13.8px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -34,7 +34,7 @@
   font-family: Inter;
   font-size: 13.8px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -90,20 +90,25 @@
   position: relative;
   z-index: 2;
 }
+.orange__text {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
 
 .orange__textbutton {
   color: #404040;
-  font-family: Roboto;
+  font-family: Inter;
   font-size: 10.1px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
 .orange__textbottom {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 2px;
   padding-bottom: 12px;
 }
 .orange__transaprent {
@@ -192,10 +197,18 @@
 
 .orange__chinese {
   color: #454547;
-  font-family: Roboto;
+  font-family: Inter;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: normal;
+}
+.orange__chineses {
+  color: #454547;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -208,16 +221,19 @@
   padding-bottom: 12px;
 }
 .green {
-  color: #2b423a;
-  font-family: Roboto;
+  color: #627770;
+  font-family: "Roboto";
   font-size: 10px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .orange__fourthline {
-  padding-top: 35px;
+  padding-top: 11px;
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
@@ -235,10 +251,10 @@
 
 .chinese__orange {
   color: #454547;
-  font-family: Roboto;
+  font-family: Inter;
   font-size: 13.6px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -260,17 +276,18 @@
   height: 27px;
   border-radius: 13.5px;
   border: 1px solid #e1e1e1;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 12px;
 }
 
 .orange__border > span {
-  color: #2b423a;
+  color: #38534a;
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -284,21 +301,24 @@
 }
 
 .sithline__title {
-  color: #000;
-  font-family: Roboto;
+  color: #454547;
+  font-family: Inter;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
 .sithline__right {
-  color: #2b423a;
-  font-family: Roboto;
-  font-size: 11px;
+  color: #627770;
+  font-family: "Roboto";
+  font-size: 10px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .sithline__firstline {
@@ -317,7 +337,7 @@
 }
 
 .orange__lastline {
-  padding-top: 8px;
+  padding-top: 9.3px;
   display: flex;
   align-self: center;
   align-items: center;
@@ -340,14 +360,15 @@
   justify-content: flex-end;
   padding-right: 12px;
   padding-bottom: 10px;
+  gap: 2px;
 }
 
 .background__first > span {
   color: #000;
   font-family: "Roboto", sans-serif;
-  font-size: 11.8px;
+  font-size: 11.6px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -361,11 +382,11 @@
 }
 
 .orange___stlylecurrency {
-  color: #000;
-  font-family: Roboto;
+  color: #242827;
+  font-family: "Inter";
   font-size: 10.2px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 
@@ -386,7 +407,7 @@
 .second__orangetitle {
   color: #454547;
   font-family: Roboto;
-  font-size: 11.8px;
+  font-size: 11.6px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
