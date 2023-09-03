@@ -6,6 +6,25 @@ import Number from "../../shared/Number";
 import Names from "../../shared/Names";
 
 function Completed(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
+  const CheckstatusBattery = () => {
+    let background = "";
+
+    if (limit >= 20) {
+      background = "#fdd60c";
+    }
+
+    if (limit <= 20) {
+      background = "#FD3731";
+    }
+
+    if (limit >= 40) {
+      background = "#000";
+    }
+
+    return background;
+  };
   return (
     <div className="app__completed">
       {/* styling the header */}
@@ -27,10 +46,13 @@ function Completed(props) {
         </div>
         <div className="completed__right">
           <div className="right__batterycompleted">
-            <span className="completed__level">94%</span>
+            <span className="completed__level">{limit}%</span>
             <div className="completed__battery">
               <div className="battery__completed">
-                <div className="level__completed"></div>
+                <div
+                  className="level__completed"
+                  style={{ width: `${limit}%`, background: CheckstatusBattery(), }}
+                ></div>
               </div>
               <div className="border__completed"></div>
             </div>

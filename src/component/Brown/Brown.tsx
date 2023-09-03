@@ -3,6 +3,25 @@ import "./Brown.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 function Brown(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
+  const CheckstatusBattery = () => {
+    let background = "";
+
+    if (limit >= 20) {
+      background = "#fdd60c";
+    }
+
+    if (limit <= 20) {
+      background = "#FD3731";
+    }
+
+    if (limit >= 40) {
+      background = "#000";
+    }
+
+    return background;
+  };
   return (
     <div className="app__brown">
       <div className="brown__header">
@@ -12,7 +31,7 @@ function Brown(props) {
         <div className="brownheader__right">
           <div className="brown__battery">
             <div className="cadre__battery">
-              <div className="level__battery"></div>
+              <div className="level__battery"   style={{ width: `${limit}%`, background: CheckstatusBattery(), }}></div>
             </div>
             <div className="samll__border"></div>
           </div>
@@ -77,7 +96,8 @@ function Brown(props) {
             </div>
             <div className="brown__table2 __end">
               <span className="brown__amount ">
-                {Number.japanesse(props.amount)} <span className="brown__currency">円</span>
+                {Number.japanesse(props.amount)}{" "}
+                <span className="brown__currency">円</span>
               </span>
             </div>
           </div>
@@ -143,7 +163,10 @@ function Brown(props) {
               <span>管理番号</span>
             </div>
             <div className="brown__table2  __lastone">
-              <span className="brown__accountnumber">{Dates.generateRandomDateNumber()}-18{Number.genrateRandom6Number()}</span>
+              <span className="brown__accountnumber">
+                {Dates.generateRandomDateNumber()}-18
+                {Number.genrateRandom6Number()}
+              </span>
             </div>
           </div>
         </div>

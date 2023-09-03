@@ -4,6 +4,25 @@ import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 import Names from "../../shared/Names";
 function Grey(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
+  const CheckstatusBattery = () => {
+    let background = "";
+
+    if (limit >= 20) {
+      background = "#fdd60c";
+    }
+
+    if (limit <= 20) {
+      background = "#FD3731";
+    }
+
+    if (limit >= 40) {
+      background = "#000";
+    }
+
+    return background;
+  };
   return (
     <div className="app__grey">
       <div className="grey__header">
@@ -13,8 +32,8 @@ function Grey(props) {
           </div>
           <div className="battery">
             <div className="battery__global">
-              <div className="battery__black"></div>
-              <span className="percentage">44</span>
+              <div className="battery__black" style={{ width: `${limit}%`, background: CheckstatusBattery(), }}></div>
+              <span className="percentage">{limit}</span>
             </div>
           </div>
         </div>
