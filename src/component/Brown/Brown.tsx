@@ -3,6 +3,7 @@ import "./Brown.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 import { IoIosWifi } from "react-icons/io";
+import Left from "../../shared/icons/Left";
 function Brown(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -27,6 +28,8 @@ function Brown(props) {
       <div className="brown__header">
         <div className="brownheader__left">
           <span className="time__brown">{Dates.currentTime()}</span>
+
+          {/* <Left /> */}
         </div>
         <div className="brownheader__right">
           <div className="brown__data">

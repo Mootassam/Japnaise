@@ -17,6 +17,13 @@
   gap: 4.5px;
 }
 
+.brownheader__left{ 
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap:5px
+}
+
 .brown__header {
   width: 370px;
   height: 38.806px;

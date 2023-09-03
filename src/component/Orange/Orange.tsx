@@ -3,6 +3,7 @@ import "./Orange.css";
 import { IoIosWifi } from "react-icons/io";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
+import Left from "../../shared/icons/Left";
 function Orange(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -30,6 +31,8 @@ function Orange(props) {
       <div className="orange__header">
         <div className="orange__left">
           <span className="orange__time">{Dates.currentTime()}</span>
+
+          <Left />
         </div>
         <div className="orange__right">
           <div className="oragne__data">

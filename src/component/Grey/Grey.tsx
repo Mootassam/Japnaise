@@ -32,6 +32,13 @@ function Grey(props) {
             <span>{Dates.currentTime()}</span>
           </div>
           <div className="orange__right">
+            <div className="grey__data">
+              <div className="grey__1"></div>
+              <div className="grey__2"></div>
+              <div className="grey__3"></div>
+              <div className="grey__4"></div>
+            </div>
+
             <IoIosWifi color="black" size={17} />
             <div className="battery">
               <div className="battery__global">
