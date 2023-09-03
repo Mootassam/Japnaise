@@ -2,10 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap");
 @font-face {
   font-family: "Kremlin Minister";
-  src: url("/src/fonts/kremlin\ minister\ bold.ttf") format("ttf"); /* Modern Browsers */
+  src: url("/src/fonts/kremlin minister bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
+
+
 .app__green {
   width: 440px;
   height: 787px;
@@ -73,7 +75,8 @@
   font-size: 21px;
   font-style: normal;
   font-weight: 600;
-  line-height: 100%; /* 21px */
+  line-height: 100%;
+  /* 21px */
 }
 
 .green__bigtitle {
@@ -91,8 +94,10 @@
   font-size: 26.5px;
   font-style: normal;
   font-weight: 600;
-  line-height: 99.99%; /* 26.497px */
+  line-height: 99.99%;
+  /* 26.497px */
 }
+
 .green__amount {
   display: flex;
   align-items: baseline;
@@ -117,7 +122,8 @@
   font-size: 31px;
   font-style: normal;
   font-weight: 600;
-  line-height: 99.99%; /* 30.997px */
+  line-height: 99.99%;
+  /* 30.997px */
   letter-spacing: 1.24px;
 }
 
@@ -135,13 +141,15 @@
   align-items: center;
   justify-content: center;
 }
+
 .description__145 > span {
   color: #8f8f8f;
   font-family: Inter;
   font-size: 18.5px;
   font-style: normal;
   font-weight: 400;
-  line-height: 99.99%; /* 18.498px */
+  line-height: 99.99%;
+  /* 18.498px */
   padding-top: 16px;
 }
 
@@ -161,7 +169,8 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 99.99%; /* 19.998px */
+  line-height: 99.99%;
+  /* 19.998px */
 }
 
 .grenn__smalldescription {
@@ -170,7 +179,8 @@
   font-size: 15.9px;
   font-style: normal;
   font-weight: 400;
-  line-height: 99.99%; /* 15.898px */
+  line-height: 99.99%;
+  /* 15.898px */
   margin-top: 19px;
 }
 
@@ -188,7 +198,8 @@
   font-size: 22.7px;
   font-style: normal;
   font-weight: 400;
-  line-height: 99.99%; /* 22.698px */
+  line-height: 99.99%;
+  /* 22.698px */
 }
 
 .green__dardescription > span:nth-child(2) {
@@ -197,7 +208,8 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 99.99%; /* 23.998px */
+  line-height: 99.99%;
+  /* 23.998px */
 }
 
 .green__blue {
@@ -205,13 +217,15 @@
   display: flex;
   gap: 2px;
 }
+
 .green__blue > span {
   color: #5589dc;
   font-family: Open Sans Hebrew;
   font-size: 18.58px;
   font-style: normal;
   font-weight: 400;
-  line-height: 102%; /* 18.952px */
+  line-height: 102%;
+  /* 18.952px */
 }
 
 /* styling the desctiption */
@@ -225,6 +239,7 @@
   padding-right: 29px;
   padding-top: 31px;
 }
+
 .green__detaill > div {
   display: flex;
   justify-content: space-between;
@@ -238,16 +253,20 @@
   font-size: 15.7px;
   font-style: normal;
   font-weight: 400;
-  line-height: 102%; /* 16.014px */
+  line-height: 102%;
+  /* 16.014px */
 }
+
 .second__detail {
   color: #8f8f8f;
   font-family: "Open Sans", sans-serif;
   font-size: 15.7px;
   font-style: normal;
   font-weight: 400;
-  line-height: 102%; /* 16.014px */
+  line-height: 102%;
+  /* 16.014px */
 }
+
 .details {
   padding-bottom: 19px;
 }
@@ -279,8 +298,10 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  line-height: 99.99%; /* 14.999px */
+  line-height: 99.99%;
+  /* 14.999px */
 }
+
 .level__1 {
   padding-top: 4px;
   padding-left: 35px;
