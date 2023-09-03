@@ -3,6 +3,7 @@ import "./Grey.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 import Names from "../../shared/Names";
+import { IoIosWifi } from "react-icons/io";
 function Grey(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -30,10 +31,19 @@ function Grey(props) {
           <div className="time">
             <span>{Dates.currentTime()}</span>
           </div>
-          <div className="battery">
-            <div className="battery__global">
-              <div className="battery__black" style={{ width: `${limit}%`, background: CheckstatusBattery(), }}></div>
-              <span className="percentage">{limit}</span>
+          <div className="orange__right">
+            <IoIosWifi color="black" size={17} />
+            <div className="battery">
+              <div className="battery__global">
+                <div
+                  className="battery__black"
+                  style={{
+                    width: `${limit}%`,
+                    background: CheckstatusBattery(),
+                  }}
+                ></div>
+                <span className="percentage">{limit}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -66,7 +76,11 @@ function Grey(props) {
           </div>
           <div className="level2__box">
             <span> 管理番号：</span>
-            <span> 2144180332{Dates.generateRandomDateNumber()}1{Number.generateRandom7Number()}</span>
+            <span>
+              {" "}
+              2144180332{Dates.generateRandomDateNumber()}1
+              {Number.generateRandom7Number()}
+            </span>
           </div>
           <div className="level2__detail">
             <div>

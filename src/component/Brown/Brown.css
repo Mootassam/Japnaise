@@ -11,6 +11,12 @@
   position: relative;
 }
 
+.brownheader__right {
+  display: flex;
+  align-items: center;
+  gap: 4.5px;
+}
+
 .brown__header {
   width: 370px;
   height: 38.806px;
@@ -31,6 +37,33 @@
   font-weight: 900;
   line-height: normal;
   letter-spacing: 0.49px;
+}
+
+.brown__data {
+  display: flex;
+  align-items: baseline;
+  gap: 1.7px;
+}
+.brown__1 {
+  width: 2.7px;
+  height: 3px;
+  background-color: #000;
+}
+
+.brown__2 {
+  width: 2.7px;
+  height: 6px;
+  background-color: #000;
+}
+.brown__3 {
+  width: 2.7px;
+  height: 8px;
+  background-color: #000;
+}
+.brown__4 {
+  width: 2.7px;
+  height: 11px;
+  background-color: #C9C9C9;
 }
 
 /* styling the headeer */

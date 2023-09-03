@@ -38,7 +38,6 @@ function Orange(props) {
             <div className="orange3"></div>
             <div className="orange4"></div>
           </div>
-
           <IoIosWifi color="black" size={17} />
           <div className="orange__battery">
             <div className="large__orangebattery">

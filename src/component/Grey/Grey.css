@@ -36,7 +36,7 @@
 }
 .percentage {
   position: absolute;
-  top: 50%; /* Position the element 50% from the top of the container */
+  top: 45%; /* Position the element 50% from the top of the container */
   left: 50%; /* Position the element 50% from the left of the container */
   transform: translate(-50%, -50%);
   color: #fff;

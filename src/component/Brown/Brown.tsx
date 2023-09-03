@@ -2,6 +2,7 @@ import React from "react";
 import "./Brown.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
+import { IoIosWifi } from "react-icons/io";
 function Brown(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -19,7 +20,6 @@ function Brown(props) {
     if (limit >= 40) {
       background = "#000";
     }
-
     return background;
   };
   return (
@@ -29,9 +29,19 @@ function Brown(props) {
           <span className="time__brown">{Dates.currentTime()}</span>
         </div>
         <div className="brownheader__right">
+          <div className="brown__data">
+            <div className="brown__1"></div>
+            <div className="brown__2"></div>
+            <div className="brown__3"></div>
+            <div className="brown__4"></div>
+          </div>
+          <IoIosWifi color="black" size={17} />
           <div className="brown__battery">
             <div className="cadre__battery">
-              <div className="level__battery"   style={{ width: `${limit}%`, background: CheckstatusBattery(), }}></div>
+              <div
+                className="level__battery"
+                style={{ width: `${limit}%`, background: CheckstatusBattery() }}
+              ></div>
             </div>
             <div className="samll__border"></div>
           </div>
