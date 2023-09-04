@@ -135,7 +135,7 @@ function Brown(props) {
                   <span className="small__header">利用可能ポイント合計</span>
                 </div>
                 <div className="semi__amount">
-                  <span className="amount__semi">{Number.calculateFee(props.amount)}</span>
+                  <span className="amount__semi">{Number.calculatepoint(props.amount)}</span>
                   <span className="title__amount">ポイント</span>
                 </div>
                 <div className="large__cadre">
@@ -151,7 +151,7 @@ function Brown(props) {
                       </div>
                     </div>
                     <div className="large__right">
-                      <span className="cadre__amount">{Number.calculateFee(props.amount)}</span>
+                      <span className="cadre__amount">{Number.calculatepoint(props.amount)}</span>
                       <span className="small__text">ポイント</span>
                     </div>
                   </div>

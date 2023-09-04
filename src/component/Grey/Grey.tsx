@@ -120,7 +120,7 @@ function Grey(props) {
             </div>
             <div>
               <span>振込手数料</span>
-              <span>145 円</span>
+              <span>{Number.calculatefee(props.amount)} 円</span>
             </div>
             <div>
               <span>ポイント利用</span>

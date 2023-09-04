@@ -94,7 +94,7 @@ class Number {
     return this.japanesse(fee);
   }
 
-  static calculateFee(amount) {
+  static calculatepoint(amount) {
     let total;
     // eslint-disable-next-line prefer-const
     total = amount / 2724;
