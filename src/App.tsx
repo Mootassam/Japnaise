@@ -39,7 +39,6 @@ function App() {
         />
         <div className="content" ref={divRef}>
           <div className="app__canvas">
-            
             {value === "completed" ? (
               <canvas
                 ref={canvasRef as any}
@@ -50,11 +49,32 @@ function App() {
                 onMouseMove={draw}
                 onMouseUp={endDrawing}
               />
-            ) : (
+            ) : value === "green" ? (
               <canvas
                 ref={canvasRef as any}
-                width={360}
+                width={440}
                 height={820}
+                style={{ cursor }}
+                onMouseDown={startDrawing}
+                onMouseMove={draw}
+                onMouseUp={endDrawing}
+              />
+            ) : value === "large" ? (
+              <canvas
+                ref={canvasRef as any}
+                width={671}
+                height={820}
+                style={{ cursor }}
+                onMouseDown={startDrawing}
+                onMouseMove={draw}
+                onMouseUp={endDrawing}
+              />
+            ) : (
+              // Default condition if neither "completed" nor "incomplete" is true
+              <canvas
+                ref={canvasRef as any}
+                width={400}
+                height={400}
                 style={{ cursor }}
                 onMouseDown={startDrawing}
                 onMouseMove={draw}
@@ -62,7 +82,7 @@ function App() {
               />
             )}
           </div>
-   
+
           {value === "green" && <Green amount={amount} />}
           {value === "large" && <Large amount={amount} />}
           {value === "Grey" && <Grey amount={amount} />}
