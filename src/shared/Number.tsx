@@ -94,6 +94,13 @@ class Number {
     return this.japanesse(fee);
   }
 
+  static calculateFee(amount) {
+    let total;
+    // eslint-disable-next-line prefer-const
+    total = amount / 2724;
+    return this.japanesse(total);
+  }
+
   static hongkongstyle2(amount) {
     const exchangeRate = 1; // Replace with the actual exchange rate
     const hkdAmount = amount * exchangeRate;

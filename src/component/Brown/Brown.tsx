@@ -122,7 +122,8 @@ function Brown(props) {
             <div className="brown__table2 __item2 __ends">
               <div className="__end">
                 <span className="brown__amount">
-                  {Number.calculatefee(props.amount)}<span className="brown__currency">円</span>
+                  {Number.calculatefee(props.amount)}
+                  <span className="brown__currency">円</span>
                 </span>
               </div>
               <div className="brown__smalltable">
@@ -134,23 +135,23 @@ function Brown(props) {
                   <span className="small__header">利用可能ポイント合計</span>
                 </div>
                 <div className="semi__amount">
-                  <span className="amount__semi">1,101</span>
+                  <span className="amount__semi">{Number.calculateFee(props.amount)}</span>
                   <span className="title__amount">ポイント</span>
                 </div>
                 <div className="large__cadre">
                   <div className="cadre__top">
                     <div className="large__left">
                       <div>
-                        <div className="bults"></div>{" "}
+                        <div className="bults"></div>
                         <span className="cadre__text">楽天ポイント</span>
                       </div>
                       <div>
-                        <div className="bults"></div>{" "}
+                        <div className="bults"></div>
                         <span className="cadre__text">楽天ポイント</span>
                       </div>
                     </div>
                     <div className="large__right">
-                      <span className="cadre__amount">1,101</span>
+                      <span className="cadre__amount">{Number.calculateFee(props.amount)}</span>
                       <span className="small__text">ポイント</span>
                     </div>
                   </div>
