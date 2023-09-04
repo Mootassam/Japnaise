@@ -55,6 +55,7 @@ function Sidebar({
             type="text"
             onChange={(e) => setAmount(e.target.value)}
             maxLength={7}
+            
           />
         </div>
         <div className="form__group">

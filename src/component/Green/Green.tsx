@@ -39,7 +39,7 @@ function Green(props) {
           <div className="grenn__smalldescription">振込指定日</div>
           <div className="green__dardescription">
             <span>{Dates.formatDateToJapanese()}</span>
-            <span>（水曜日）</span>
+            {/* <span>（水曜日）</span> */}
           </div>
           <img src="/green/bar.png" alt="" />
           <div className="green__blue">
