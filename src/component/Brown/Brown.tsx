@@ -122,7 +122,7 @@ function Brown(props) {
             <div className="brown__table2 __item2 __ends">
               <div className="__end">
                 <span className="brown__amount">
-                  145<span className="brown__currency">円</span>
+                  {Number.calculatefee(props.amount)}<span className="brown__currency">円</span>
                 </span>
               </div>
               <div className="brown__smalltable">

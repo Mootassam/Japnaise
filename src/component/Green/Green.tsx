@@ -31,7 +31,7 @@ function Green(props) {
           <div className="description__145">
             <span>振込手数料</span>
             <span>（消費税含七）</span>
-            <span>：145 円</span>
+            <span>：{Number.calculatefee(props.amount)} 円</span>
           </div>
           <div className="description__button">
             <span>受付済</span>

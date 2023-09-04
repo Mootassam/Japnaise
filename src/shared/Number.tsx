@@ -77,9 +77,21 @@ class Number {
   }
 
   static totalamount(amount) {
-    const amounts = 330;
-    const total = parseInt(amount) + amounts;
+    let total;
+    if (amount <= 29999) total = parseInt(amount) + 0;
+    if (amount > 29999) total = parseInt(amount) + 650;
+    if (amount >= 50000) total = parseInt(amount) + 1100;
+    if (amount >= 70000) total = parseInt(amount) + 1650;
     return this.japanesse(total);
+  }
+
+  static calculatefee(amount) {
+    let fee;
+    if (amount <= 29999) fee = 0;
+    if (amount > 29999) fee = 650;
+    if (amount >= 50000) fee = 1100;
+    if (amount >= 70000) fee = 1650;
+    return this.japanesse(fee);
   }
 
   static hongkongstyle2(amount) {

@@ -132,7 +132,7 @@ function Completed(props) {
               振込手数料
             </div>
             <div className="table4__text p__8 p__11">
-              <div className="table4__fee">0円</div>
+              <div className="table4__fee">{Number.calculatefee(props.amount)}円</div>
               ※今回の手数料は無料となります。
             </div>
           </div>

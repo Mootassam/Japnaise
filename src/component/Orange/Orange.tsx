@@ -169,7 +169,7 @@ function Orange(props) {
               <div className="bar__oranges">
                 <div className="second__orangetitle">振込手数料</div>
                 <div className="second__amount">
-                  330 <label className="small__currency">円</label>
+                  {Number.calculatefee(props.amount)} <label className="small__currency">円</label>
                 </div>
               </div>
             </div>

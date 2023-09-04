@@ -74,7 +74,7 @@ function App() {
               <canvas
                 ref={canvasRef as any}
                 width={400}
-                height={400}
+                height={800}
                 style={{ cursor }}
                 onMouseDown={startDrawing}
                 onMouseMove={draw}

@@ -101,7 +101,7 @@ function Large(props) {
                     手数料
                   </span>
                 </div>
-                <div className="second__element __amount__large">330円</div>
+                <div className="second__element __amount__large">{Number.calculatefee(props.amount)}円</div>
               </div>
               <div className="__ligne">
                 <div className="first__element first__secondcolor">
