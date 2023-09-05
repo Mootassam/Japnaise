@@ -66,7 +66,7 @@ function Green(props) {
             <div className="details">
               <span className="first__detail">振込受付日</span>
               <span className="second__detail">
-                {Dates.formatDateToJapanese()}（水曜曰）
+                {Dates.formatDateToJapanese()}
               </span>
             </div>
             <div className="last">
