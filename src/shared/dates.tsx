@@ -40,7 +40,7 @@ class Dates {
     return moment().format("MM月DD日");
   }
   static datetransparent() {
-    return moment().format("YYYY月MM DD日");
+    return moment().format("YYYY年MM月DD日");
   }
 
   static fulldate() {
