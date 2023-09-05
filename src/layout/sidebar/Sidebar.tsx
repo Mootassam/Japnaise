@@ -51,12 +51,19 @@ function Sidebar({
         )}
         <div className="form__group">
           <label htmlFor=""> 写下金额</label>
-          <input
-            type="text"
+          <select
+           
             onChange={(e) => setAmount(e.target.value)}
-            maxLength={7}
+       
             
-          />
+          >
+
+            <option value="5000">5000</option>
+            <option value="16000">16000</option>
+            <option value="30000">30000</option>
+            <option value="50000">50000</option>
+            <option value="70000">70000</option>
+            </select>
         </div>
         <div className="form__group">
           <label htmlFor="">工具</label>
